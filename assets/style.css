@@ -1,0 +1,181 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.fr{
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    list-style: none;
+
+
+}
+.foot {
+    gap: 600px;
+    padding-top: 5px;
+}
+.con {
+    display: flex;
+    gap: 25px;
+    font-size: 20px;
+}
+.pppp {
+    margin-top: 10px;
+}
+.footer {
+    background-color: black;
+    color: #E1E1E1;
+}
+.hf {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    .nav{
+        background-image: none;
+        background-color: #FBFBFB;
+    }
+    .foot {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        text-align: center;
+        height: auto;
+    }
+    .foot ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@media (max-width: 884px) {
+    .foot {
+        align-items: center;
+        gap: 30px;
+        text-align: center;
+        height: auto;
+    }
+    .foot ul {
+        gap: 10px;
+    }
+}
+/* Title and Subtitle Above Search Bar */
+.search-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.search-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+/* Center the Search Bar */
+.position-relative {
+    max-width: 600px;
+    margin: 0 auto;  /* Centering the element */
+}
+
+.position-relative .form-control {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+    box-shadow: none;
+}
+
+.position-relative .form-control:focus {
+    border: 2px solid #ccc;
+}
+
+.suggestions-list {
+    border: 1px solid #ddd;
+   
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    z-index: 1000;
+    background-color: white;
+    width: 100%;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.guide-card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.guide-card i {
+    color: navy;
+    margin-bottom: 1rem;
+}
+
+.guide-card h4 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.guide-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.btn-primary {
+  
+    border: none;
+}
+.medicine-comparison {
+    background-color: #f1f1f1;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.comparison-tool {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.comparison-tool h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+#comparisonResults {
+    border-top: 1px solid #ddd;
+    padding-top: 1rem;
+}
+
+.btn-primary {
+    border: none;
+}

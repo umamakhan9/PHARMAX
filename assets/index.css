@@ -1,0 +1,242 @@
+/* General Styles */
+* {
+    /* font-family: 'Roboto', Arial, sans-serif; */
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav {
+    background-image: url('../assets/img/bf.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-attachment: fixed;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+}
+
+.nav-link {
+    color:#2E073F;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+
+
+.navbar-brand {
+   margin-left: 50px;
+   object-fit: contain;
+}
+body {
+    line-height: 1.6;
+}
+.pp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+}
+
+.search-bar {
+
+
+    animation: zoomInOut 1.5s infinite;
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Section Styles */
+.section {
+    padding: 60px 0;
+    /* border-bottom: 1px solid #e6e6e6; */
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+    /* color: #000; */
+    color: #2E073F;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px; 
+    font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+/* Card Styles */
+.card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.card-text {
+    color: #555;
+}
+
+.category-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px 25px;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+} 
+
+.category-item:hover {
+    /* background-color: #f4f4f4; */
+    background-color: #D1E9F6;
+    border-color: #ccc;
+}
+
+ .category-item a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    padding: 10px 0;
+    transition: color 0.3s;
+} 
+
+ .category-item a:hover {
+    color: #333;
+} 
+
+/* Accordion FAQ Styles */
+.accordion-button {
+    background-color:#A0C0D8;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    color: #000;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #D1E9F6;
+    border-color: #ccc;
+}
+
+.accordion-item {
+    border: none;
+    /* background-color: #F5EDED; */
+    margin-bottom: 10px;
+}
+
+.accordion-body {
+    color: #444;
+    border-top: 1px solid #ddd;
+    padding: 15px;
+}
+
+/* Search Input and Suggestions */
+#medicineInput {
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+#medicineInput:focus {
+    border-color: #333;
+    outline: none;
+}
+
+.suggestions-list {
+    border: 1px solid #e0e0e0;
+    max-height: 200px;
+    overflow-y: auto;
+    position: absolute;
+    z-index: 1000;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} 
+
+ .suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+} 
+
+.suggestion-item:hover {
+    background-color: #f4f4f4;
+}
+
+.btn-dark {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-bottom: 40px;
+
+}
+
+.btn-dark:hover {
+    background-color: white;
+    color: maroon;
+    border: 1px solid black;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
